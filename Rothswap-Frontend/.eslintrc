@@ -1,0 +1,59 @@
+{
+  "settings": {
+    "import/resolver": {
+      "typescript": {},
+      "node": {
+        "paths": ["./src", "node_modules/", "node_modules/@types"],
+        "extensions": [".ts", ".tsx", ".native.js", ".d.ts"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+
+  "extends": "@pancakeswap-libs/eslint-config-pancake",
+  "rules": {
+    "no-console": ["warn", { "allow": ["info", "warn", "error"] }],
+    "no-plusplus": 0,
+    "prefer-destructuring": ["warn", { "object": true, "array": false }],
+    "max-classes-per-file": 0,
+    "camelcase": 0,
+    "no-alert": 0,
+    "no-underscore-dangle": 0,
+    "react/destructuring-assignment": 0,
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/order": "off",
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
+    "import/no-useless-path-segments": "off",
+    "import/export": "off",
+    // Start temporary rules
+    // These rules are here just to keep the lint error to 0 during the migration to the new rule set
+    // They need to be removed and fixed as soon as possible
+    "@typescript-eslint/ban-ts-comment": [1, { "ts-ignore": false, "ts-nocheck": false }],
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "func-names": "off",
+    "radix": 0,
+    "import/no-extraneous-dependencies": "off",
+    "import/no-duplicates": "off",
+    "import/no-cycle": "off",
+    "import/named": "off",
+    "import/no-self-import": "off",
+    "no-case-declarations": 0,
+    "no-await-in-loop": 0,
+    "no-param-reassign": 0,
+    "no-nested-ternary": 0,
+    "default-case": 0,
+    "react/require-default-props": 0,
+    "class-methods-use-this": 0
+    // End temporary rules
+  }
+}

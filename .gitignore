@@ -1,0 +1,41 @@
+.DS_Store
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+Rothswap-Frontend/sftp-config.json
+# dependencies
+Rothswap-Frontend/node_modules
+
+# testing
+Rothswap-Frontend/coverage
+
+# production
+Rothswap-Frontend/build
+
+# misc
+Rothswap-Frontend/.DS_Store
+Rothswap-Frontend/.env.local
+Rothswap-Frontend/.env.development.local
+Rothswap-Frontend/.env.test.local
+Rothswap-Frontend/.env.production.local
+Rothswap-Frontend/.env
+Rothswap-Frontend/.env.development
+Rothswap-Frontend/.env.test
+Rothswap-Frontend/.env.production
+
+Rothswap-Frontend/.netlify
+
+Rothswap-Frontend/npm-debug.log*
+Rothswap-Frontend/yarn-debug.log*
+Rothswap-Frontend/yarn-error.log*
+
+Rothswap-Frontend/notes.txt
+Rothswap-Frontend/.idea/
+
+Rothswap-Frontend/.vscode/
+
+Rothswap-Frontend/package-lock.json
+
+Rothswap-Frontend/cypress/videos
+Rothswap-Frontend/cypress/screenshots
+Rothswap-Frontend/cypress/fixtures/example.json
+
+Rothswap-Frontend/.eslintcache
