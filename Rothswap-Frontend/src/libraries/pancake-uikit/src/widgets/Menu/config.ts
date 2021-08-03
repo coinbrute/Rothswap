@@ -27,7 +27,7 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "http://127.0.0.1:4200/#/swap",
+        href: "http://localhost:3000/#/swap",
       }
     ],
   }

@@ -145,7 +145,7 @@ const Swap = () => {
       }
 
       if (modalCountdownSecondsRemaining <= 0) {
-        window.location.href = 'http://127.0.0.1:4200/#/swap'
+        window.location.href = 'http://localhost:3000/#/swap'
       }
 
       return () => {
@@ -479,7 +479,7 @@ const Swap = () => {
                 <Flex alignItems="center" justifyContent="center" mb="1rem">
                   <Text color="failure">
                     Please use{' '}
-                    <StyledLink external href="http//127.0.0.1:4200/#">
+                    <StyledLink external href="http//localhost:3000/#">
                       PancakeSwap V2
                     </StyledLink>{' '}
                     to make this trade

@@ -24,7 +24,7 @@ const CurrencySelect = styled.button<{ selected: boolean }>`
   font-size: 16px;
   font-weight: 500;
   background-color: transparent;
-  color: ${({ selected, theme }) => (selected ? theme.colors.text : '#FFFFFF')};
+  color: ${({ selected, theme }) => (selected ? '#906e1e' : '#FFFFFF')};
   border-radius: 12px;
   outline: none;
   cursor: pointer;
@@ -108,7 +108,7 @@ export default function CurrencyInputPanel({
     setModalOpen(false)
   }, [setModalOpen])
   const btnStyle: CSSProperties = {
-    color: '#eef2ff',
+    color: '#906e1e',
   };
   return (
     <InputPanel id={id}>
