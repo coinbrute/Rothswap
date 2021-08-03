@@ -131,26 +131,26 @@ const Swap = () => {
 
     if (doesInputMatch && doesOutputMatch) {
       // Controls the swap buttons being disabled & renders a message
-      setDisableSwap(true)
+      setDisableSwap(false)
 
-      const tick = () => {
-        setModalCountdownSecondsRemaining((prevSeconds) => prevSeconds - 1)
-      }
-      const timerInterval = setInterval(() => tick(), 1000)
+      // const tick = () => {
+      //   setModalCountdownSecondsRemaining((prevSeconds) => prevSeconds - 1)
+      // }
+      // const timerInterval = setInterval(() => tick(), 1000)
 
-      if (interruptRedirectCountdown) {
-        // Reset timer if countdown is interrupted
-        clearInterval(timerInterval)
-        setModalCountdownSecondsRemaining(5)
-      }
+      // if (interruptRedirectCountdown) {
+      //   // Reset timer if countdown is interrupted
+      //   clearInterval(timerInterval)
+      //   setModalCountdownSecondsRemaining(5)
+      // }
 
-      if (modalCountdownSecondsRemaining <= 0) {
-        window.location.href = 'http://localhost:3000/#/swap'
-      }
+      // if (modalCountdownSecondsRemaining <= 0) {
+      //   window.location.href = 'http://localhost:3000/#/swap'
+      // }
 
-      return () => {
-        clearInterval(timerInterval)
-      }
+      // return () => {
+      //   clearInterval(timerInterval)
+      // }
     }
 
     // Unset disableSwap state if the swap inputs & outputs dont match disabledSwaps
@@ -479,7 +479,7 @@ const Swap = () => {
                 <Flex alignItems="center" justifyContent="center" mb="1rem">
                   <Text color="failure">
                     Please use{' '}
-                    <StyledLink external href="http//localhost:3000/#">
+                    <StyledLink external href="https://rothswap-v1.vercel.app/#">
                       PancakeSwap V2
                     </StyledLink>{' '}
                     to make this trade

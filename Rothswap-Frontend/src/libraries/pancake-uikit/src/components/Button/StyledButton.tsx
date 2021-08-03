@@ -11,7 +11,7 @@ interface TransientButtonProps extends ThemedButtonProps {
   $isLoading?: boolean;
 }
 
-const getDisabledStyles = ({ $isLoading, theme }: TransientButtonProps) => {
+const getDisabledStyles = ({ $isLoading }: TransientButtonProps) => {
   if ($isLoading === true) {
     return `
       &:disabled,
